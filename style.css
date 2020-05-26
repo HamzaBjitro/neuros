@@ -1,8 +1,8 @@
-body{
+/* body{
     background-image: url('bg.jpg');
      background-attachment: fixed;
    background-size: cover;
-}
+} */
 #airplane {
 opacity:0;
 color: #4bf309;
