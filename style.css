@@ -3,75 +3,74 @@
      background-attachment: fixed;
    background-size: cover;
 } */
+
+
 #airplane {
-opacity:0;
 color: #4bf309;
 font-size: 30px;
 left: 780px;
-top:135px;
+top:150px;
 position: absolute;
 }
 #chair {
-opacity:0;
 transform: rotate(90deg);
 color: #4bf309;
 font-size: 30px;
-left: 860px;
-top:310px;
+left: 885px;
+top:330px;
 position: absolute;
 }
 #pig {
-opacity:0;
 color: #4bf309;
-font-size: 30px;
-left: 800px;
-top:420px;
+font-size: 35px;
+left: 815px;
+top:465px;
 position: absolute;
 }
 #zebra {
-opacity:0;
 color: #4bf309;
 font-size:30px;
-left: 620px;
-top:450px;
+left: 610px;
+top:500px;
 position: absolute;
 }
 #cow {
-opacity:0;
 color: #4bf309;
-font-size:30px;
-left: 480px;
-top:342px;
+font-size:40px;
+left: 460px;
+top:380px;
 position: absolute;
 }
 #dog {
-opacity:0;
 color: #4bf309;
-font-size:25px;
-left: 490px;
-top:180px;
+font-size:20px;
+left: 480px;
+top:200px;
 position: absolute;
 }
 
 #human{
-opacity:0;
 transform: rotate(90deg);
 color: #4bf309;
 font-size: 30px;
-left: 620px;
-top:50px;
+left: 610px;
+top:60px;
 position: absolute;
 }
 
 
 .guess {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 35px;
-left: 650px;
-text-align: center;
+  font-family: Orbitron; 
+  font-style: normal;
+  font-variant: normal; 
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #f2f2f2;
+  font-size: 20px;
+  position: absolute;
+  bottom: 225px;
+  left: 680px;
+  text-align: center;
 }
 
        
@@ -81,3 +80,16 @@ height: 100%;
 }
 
 
+.animal{
+  opacity:0;
+  cursor:default;
+
+}
+#logo{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  top:25px;
+  left:40px;
+  position: absolute;
+
+}

@@ -7,17 +7,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/artificial-intelligence-31/100/AI_artificial_intelligence_virtual_reality-07-512.png">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>three.js webgl - OBJLoader + MTLLoader</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <title>Neuros.fun</title>
 
     <style>
-
     #result{
-        height: 600px;
+        height: 660px;
         width:1200px;
         margin-left: 100px;
     }
-
+  
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -26,7 +28,8 @@
 
 <body>
 
-   
+        <div id="logo">Neuros</div>
+
         <div id="result" class="w3-display-container mySlides">
             <div id="airplane" class="animal" onmouseover="hover(this)">airplane</div>
             <div id="chair" class="animal" onmouseover="hover(this)">chair</div>
@@ -36,7 +39,7 @@
             <div id="dog" class="animal" onmouseover="hover(this)">dog</div>
             <div id="human" class="animal" onmouseover="hover(this)">human</div>
             <div class="guess">
-                <p>It's <br><span id="demo3">Mouse over me!</span></p>
+                <p>It's <br><span id="demo3">----</span></p>
             </div>
         </div>
 
@@ -45,25 +48,21 @@
 </div>
 
 
-
-            
-     
-
-
 <script>
     var y = 0;
     function hover(e) {
         document.getElementById("demo3").innerHTML = e.id;
     }
     VANTA.NET({
-        el: "body",
+        el: "html",
         mouseControls: true,
         touchControls: true,
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x6c3fff
+        color: 0x25bdde
+
 
     })
 </script>
