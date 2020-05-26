@@ -1,3 +1,0 @@
-2020.05.26 19:36:45 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\hp\Desktop\New folder (2)\Web dev Fles\three_js\skin\playground'
-2020.05.26 19:36:47 INFO  time: initialize in 2.11s
-2020.05.26 19:36:50 WARN  no build tool detected in workspace 'C:\Users\hp\Desktop\New folder (2)\Web dev Fles\three_js\skin\playground'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
