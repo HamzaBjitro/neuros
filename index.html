@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="scene.js"></script>
+    <script  src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>three.js webgl - OBJLoader + MTLLoader</title>
+
+    <style>
+
+    #result{
+        height: 600px;
+        width:1200px;
+        margin-left: 100px;
+    }
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    </head>
+
+<body>
+
+   
+        <div id="result" class="w3-display-container mySlides">
+            <div id="airplane" class="animal" onmouseover="hover(this)">airplane</div>
+            <div id="chair" class="animal" onmouseover="hover(this)">chair</div>
+            <div id="pig" class="animal" onmouseover="hover(this)">pig</div>
+            <div id="zebra" class="animal" onmouseover="hover(this)">zebra</div>
+            <div id="cow" class="animal" onmouseover="hover(this)">cow</div>
+            <div id="dog" class="animal" onmouseover="hover(this)">dog</div>
+            <div id="human" class="animal" onmouseover="hover(this)">human</div>
+            <div class="guess">
+                <p>It's <br><span id="demo3">Mouse over me!</span></p>
+            </div>
+        </div>
+
+
+
+</div>
+
+
+
+            
+     
+
+
+<script>
+    var y = 0;
+    function hover(e) {
+        document.getElementById("demo3").innerHTML = e.id;
+    }
+</script>
+</body>
+</html>
