@@ -126,7 +126,7 @@ const gltfLoader = new GLTFLoader();
 
 const chair = './chair/scene.gltf';
 const airplane = './plane/scene.gltf';
-const url = "https://raw.githubusercontent.com/HamzaBjitro/robot/master/scene.gltf";
+const url = "./robot/scene.gltf";
 
 gltfLoader.load(chair, (gltf) => {
     const root = gltf.scene;
