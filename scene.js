@@ -1,7 +1,6 @@
 import * as THREE from './three.module.js';
 import { GLTFLoader } from './GLTFLoader.js';
-import { OrbitControls } from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/examples/jsm/controls/OrbitControls.js';
-import { SkeletonUtils } from 'https://threejsfundamentals.org/threejs/resources/threejs/r115/examples/jsm/utils/SkeletonUtils.js';
+import { SkeletonUtils } from './SkeletonUtils.js';
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, 1, 1, 1000);
@@ -28,10 +27,6 @@ function addLight(...pos) {
 addLight(5, 5, 2);
 addLight(-5, 5, 5);
 
-
-/*   var controls = new OrbitControls(camera, renderer.domElement);
-  camera.position.set(0, 20, 100);
-  controls.update(); */
 
 var base = new THREE.Group();
 scene.add(base);
@@ -129,8 +124,8 @@ requestAnimationFrame(render);
 const gltfLoader = new GLTFLoader();
 
 
-const chair = 'https://raw.githubusercontent.com/HamzaBjitro/js_3dres/master/chair_-_low_poly/scene.gltf';
-const airplane = 'https://raw.githubusercontent.com/HamzaBjitro/js_3dres/master/low_poly_airplane_-_reggiane_re_2000/scene.gltf';
+const chair = './chair/scene.gltf';
+const airplane = './plane/scene.gltf';
 const url = "https://raw.githubusercontent.com/HamzaBjitro/robot/master/scene.gltf";
 
 gltfLoader.load(chair, (gltf) => {
