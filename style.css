@@ -112,3 +112,10 @@ display: block;
 .block{
   margin-left: 160px;
 }
+
+@media screen and (max-width: 768px) {
+
+.content-desktop {display: none;}
+.content-mobile {display: block;}
+
+}
