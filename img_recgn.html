@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="./three.min.js"></script>
-    <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+    <script>
+        if (window.screen.width > 780) {
+            document.write(
+
+                '<script src="./vanta.net.min.js"></' + 'script>' 
+                
+            )
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 <body>
-    <iframe class="block" src="https://neuros-y.herokuapp.com/" height="90%" width="90%" title="Img reco"></iframe>
+    <h1>Images recognizer:</h1>
+    <p>Using A neural network to recognize an image(for example a dog or a cat).Upload it and try</p>
+    <iframe class="block" src="https://neuros-y.herokuapp.com/" height="40%" width="90%" title="Img reco"></iframe>
 
 
     <script>

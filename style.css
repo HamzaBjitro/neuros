@@ -3,6 +3,11 @@ html, body {
    height: 100%;
 }
 
+
+h1,p{
+  font-family: 'Courier New', Courier, monospace;
+  color: #f2f2f2;
+}
 #airplane {
 color: #4bf309;
 font-size: 30px;
