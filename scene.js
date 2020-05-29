@@ -36,8 +36,7 @@ const models = {
     knight: { url: 'https://threejsfundamentals.org/threejs/resources/models/knight/KnightCharacter.gltf' },
     pug: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Pug.gltf' },
     cow: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Cow.gltf' },
-    zebra: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Zebra.gltf' },
-    pig: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Pig.gltf' },
+   
 
 };
 {
@@ -73,8 +72,8 @@ function init() {
         scene.add(root);
         root.position.z = 10;
         root.rotation.y = Math.PI * i / 6;
-        var x = 20 * Math.cos(2 * Math.PI * (i + 2) / 7);
-        var y = 20 * Math.sin(2 * Math.PI * (i + 2) / 7);
+        var x = 20 * Math.cos(2 * Math.PI * (i + 2) / 5);
+        var y = 20 * Math.sin(2 * Math.PI * (i + 2) / 5);
         root.position.x = x;
         root.position.y = y;
 
@@ -130,8 +129,8 @@ const url = "./robot/scene.gltf";
 
 gltfLoader.load(chair, (gltf) => {
     const root = gltf.scene;
-    var x = 20 * Math.cos(2 * Math.PI * -0.3 / 8);
-    var y = 20 * Math.sin(2 * Math.PI * -0.3 / 8);
+    var x = 20 * Math.cos(2 * Math.PI * -0.3 / 5);
+    var y = 20 * Math.sin(2 * Math.PI * -0.3 / 5);
     root.scale.set(0.006, 0.006, 0.006);
     root.rotation.y = -Math.PI / 2;
     root.position.x = x;
@@ -142,8 +141,8 @@ gltfLoader.load(chair, (gltf) => {
 });
 gltfLoader.load(airplane, (gltf) => {
     const root = gltf.scene;
-    var x = 20 * Math.cos(2 * Math.PI * 1 / 8);
-    var y = 20 * Math.sin(2 * Math.PI * 1 / 8);
+    var x = 20 * Math.cos(2 * Math.PI * 1 / 5);
+    var y = 20 * Math.sin(2 * Math.PI * 1 / 5);
     root.rotation.x = Math.PI / 4;
     root.rotation.y = -Math.PI / 3;
     root.position.x = x;
