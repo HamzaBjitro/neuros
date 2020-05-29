@@ -23,13 +23,23 @@
     <!-- End Google Tag Manager -->
     <meta name="description" content="AI games,articles and more!!!"/>
     <meta name="keywords" content="AI,ai,neural networks,neural,neuros,Neuros">
-   
+    <script>
+        if (window.screen.width > 780) {
+            document.write(
+    '<script type="module" src="scene.js"></'+'script>'+
+    
+    '<script src="script.js"></'+'script>'+
+    
+    '<script src="./three.min.js"></'+'script>'+
+    
+    '<script src="./vanta.net.min.js"></'+'script>'+
+    '<script type="module" src="scene.js"></'+'script>'
+    )
+    }
+    </script>
 
+    
 
-    <script type="module" src="scene.js"></script>
-    <script  src="script.js"></script>
-    <script src="./three.min.js"></script>
-    <script src="./vanta.net.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="./icon.png">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -73,7 +83,7 @@
         </div>
         <div class="content-mobile">
             <img src="img_reco.png" class="img_reco">
-            <a href="/img_recgn.html" id="link">Image-recogniser</a>
+            <a href="/img_recgn.html" id="link-m">Image-recogniser</a>
         </div>
 
 
