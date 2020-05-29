@@ -5,6 +5,7 @@ import { DRACOLoader } from './DRACOLoader.js'
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, 1, 1, 1000);
+
 camera.position.set(0, 0, 60);
 var renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -16,7 +17,11 @@ var canvas = renderer.domElement;
 const container = document.getElementById('result');
 container.appendChild(canvas);
 
-renderer.setClearColor(0xffffff, 0);
+camera.aspect = container.clientWidth / container.clientHeight;
+camera.updateProjectionMatrix();
+
+
+renderer.setClearColor(0xff00ff,0);
 function addLight(...pos) {
     const color = 0xFFFFFF;
     const intensity = 1;
@@ -76,8 +81,8 @@ function init() {
         scene.add(root);
         root.position.z = 10;
         root.rotation.y = Math.PI * i / 6;
-        var x = 20 * Math.cos(2 * Math.PI * (i + 2) / 5);
-        var y = 20 * Math.sin(2 * Math.PI * (i + 2) / 5);
+        var x = 20 * Math.cos(2 * Math.PI * (i + 2) /5.5);
+        var y = 20 * Math.sin(2 * Math.PI * (i + 2) /5.5);
         root.position.x = x;
         root.position.y = y;
 
@@ -147,8 +152,8 @@ gltfLoader.load(chair, (gltf) => {
 });
 gltfLoader.load(airplane, (gltf) => {
     const root = gltf.scene;
-    var x = 20 * Math.cos(2 * Math.PI * 1 / 5);
-    var y = 20 * Math.sin(2 * Math.PI * 1 / 5);
+    var x = 20 * Math.cos(2 * Math.PI * 1 / 6);
+    var y = 20 * Math.sin(2 * Math.PI * 1 / 6);
     root.rotation.x = Math.PI / 4;
     root.rotation.y = -Math.PI / 3;
     root.position.x = x;
