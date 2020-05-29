@@ -78,7 +78,8 @@
 </div>
 
 
-<script>
+<script >
+    if ($(window).width() >= 600) {
     var y = 0;
     function hover(e) {
         document.getElementById("demo3").innerHTML = e.id;
@@ -92,7 +93,7 @@
         color: 0x25bdde
 
 
-    })
+    })}
 </script>
 
 <script>
