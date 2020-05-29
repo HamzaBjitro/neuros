@@ -10,26 +10,32 @@
 
 </head>
 <body>
-    <iframe class="block" src="https://neuros-y.herokuapp.com/" height="600px" width="1000px" title="Img reco"></iframe>
+    <iframe class="block" src="https://neuros-y.herokuapp.com/" height="70%" width="90%" title="Img reco"></iframe>
 
 
     <script>
-        var y = 0;
-        function hover(e) {
-            document.getElementById("demo3").innerHTML = e.id;
+        if ($(window).width() >= 600) {
+            var y = 0;
+            function hover(e) {
+                document.getElementById("demo3").innerHTML = e.id;
+            }
+            VANTA.NET({
+                el: "html",
+                mouseControls: true,
+                touchControls: true,
+                scale: 1.00,
+                scaleMobile: 1,
+                color: 0x25bdde
+
+
+            })
+        } else {
+            document.body.style.backgroundImage = "url('bg.png')";
+            document.body.style.backgroundAttachment = "fixed";
+            document.body.style.backgroundSize = "cover";
+
+
         }
-        VANTA.NET({
-            el: "html",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x25bdde
-
-
-        })
     </script>
 </body>
 </html>
