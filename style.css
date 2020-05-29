@@ -103,8 +103,8 @@ display: block;
 #logo{
   font-family: 'Quicksand', sans-serif;
   font-size: 40px;
-  top:25px;
-  left:40px;
+  top:4%;
+  left:4%;
   position: absolute;
   color:white;
 }
