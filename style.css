@@ -97,6 +97,7 @@ display: block;
 
 .animal{
   cursor:default;
+  opacity:0;
 
 }
 #logo{
