@@ -108,13 +108,19 @@ display: block;
   margin-left: 160px;
 }
 
-@media screen and (max-width: 768px) {
+.content-desktop {display: block;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 600px) {
 
 .content-desktop {display: none;}
 .content-mobile {display: block;}
 }
 
 .img_reco{
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-top: 70%;
+  margin-left:25%;
 }
