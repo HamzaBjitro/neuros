@@ -1,8 +1,3 @@
-/* body{
-    background-image: url('bg.jpg');
-     background-attachment: fixed;
-   background-size: cover;
-} */
 html, body {
    margin: 0;
    height: 100%;
@@ -117,5 +112,9 @@ display: block;
 
 .content-desktop {display: none;}
 .content-mobile {display: block;}
+}
 
+.img_reco{
+  width: auto;
+  height: auto;
 }
