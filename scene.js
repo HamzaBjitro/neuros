@@ -1,6 +1,7 @@
 import * as THREE from './three.module.js';
 import { GLTFLoader } from './GLTFLoader.js';
 import { SkeletonUtils } from './SkeletonUtils.js';
+import { DRACOLoader } from './DRACOLoader.js'
 
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(60, 1, 1, 1000);
@@ -41,6 +42,9 @@ const models = {
 };
 {
     const gltfLoader = new GLTFLoader(manager);
+    var dracoLoader = new DRACOLoader();
+    gltfLoader.setDRACOLoader(dracoLoader);
+
     for (const model of Object.values(models)) {
         gltfLoader.load(model.url, (gltf) => {
             model.gltf = gltf;
@@ -121,6 +125,8 @@ function render(now) {
 requestAnimationFrame(render);
 
 const gltfLoader = new GLTFLoader();
+var dracoLoader = new DRACOLoader();
+gltfLoader.setDRACOLoader(dracoLoader);
 
 
 const chair = './chair/scene.gltf';
