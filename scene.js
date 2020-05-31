@@ -134,9 +134,9 @@ var dracoLoader = new DRACOLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 
 
-const chair = './chair/scene.gltf';
-const airplane = './plane/scene.gltf';
-const url = "./robot/out.glb";
+const chair = './chair/chair.glb';
+const airplane = './plane/plane.glb';
+const url = "./robot/robot.glb";
 
 gltfLoader.load(chair, (gltf) => {
     const root = gltf.scene;
