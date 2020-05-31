@@ -1,9 +1,12 @@
 html, body {
    margin: 0;
    height: 100%;
-   background-color: blue;
 }
-
+.articles{
+  position:absolute;
+  top:5%;
+  left:20%;
+}
 
 h1,p{
   font-family: 'Courier New', Courier, monospace;
@@ -141,4 +144,65 @@ display: block;
   position: absolute;
   margin-top: 60%;
   margin-left:25%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
+
+.description, .link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+	font-size: 35px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  
+  padding: 17px 60px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #25bdde;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-10%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+.link a {
+  color: #000;
+  font-size: 25px; 
 }
