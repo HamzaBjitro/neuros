@@ -1,4 +1,4 @@
-import * as THREE from './three.module_c.js';
+import * as THREE from './three.module.js';
 import { GLTFLoader } from './GLTFLoader.js';
 import { SkeletonUtils } from './SkeletonUtils.js';
 import { DRACOLoader } from './DRACOLoader.js'
