@@ -39,9 +39,9 @@ scene.add(base);
 const manager = new THREE.LoadingManager();
 manager.onLoad = init;
 const models = {
-    knight: { url: './animals/KnightCharacter.gltf' },
-    pug: { url: './animals/Pug.gltf' },
-    cow: { url: './animals/Cow.gltf' },
+    knight: { url: './animals/Knight.glb' },
+    pug: { url: './animals/Pug.glb' },
+    cow: { url: './animals/Cow.glb' },
    
 
 };
@@ -136,7 +136,7 @@ gltfLoader.setDRACOLoader(dracoLoader);
 
 const chair = './chair/scene.gltf';
 const airplane = './plane/scene.gltf';
-const url = "./robot/scene.gltf";
+const url = "./robot/out.glb";
 
 gltfLoader.load(chair, (gltf) => {
     const root = gltf.scene;
