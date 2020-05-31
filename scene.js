@@ -39,9 +39,9 @@ scene.add(base);
 const manager = new THREE.LoadingManager();
 manager.onLoad = init;
 const models = {
-    knight: { url: 'https://threejsfundamentals.org/threejs/resources/models/knight/KnightCharacter.gltf' },
-    pug: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Pug.gltf' },
-    cow: { url: 'https://threejsfundamentals.org/threejs/resources/models/animals/Cow.gltf' },
+    knight: { url: './animals/KnightCharacter.gltf' },
+    pug: { url: './animals/Pug.gltf' },
+    cow: { url: './animals/Cow.gltf' },
    
 
 };
