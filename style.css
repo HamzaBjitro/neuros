@@ -8,10 +8,13 @@ html, body {
   left:20%;
 }
 
-h1,p{
+.elt{
+  margin-left: 5%;
   font-family: 'Courier New', Courier, monospace;
-  color: #f2f2f2;
+  color: #f2f2f2; 
+
 }
+
 #airplane {
 color: #4bf309;
 font-size: 30px;
@@ -81,17 +84,22 @@ position: absolute;
 }
 
 #link{
-  font-style: normal;
-  font-variant: normal; 
   font-weight: 700;
   line-height: 15.4px;
   color: #f2f2f2;
   font-size: 20px;
   position: absolute;
   bottom: 30%;
-  left: 49%;
+  left: 46%;
   text-align: center;
 } 
+
+
+
+#link:hover{
+  COLOR: #25bdde; TEXT-DECORATION: none; font-weight: none;
+
+}
 #link-m{
   font-style: normal;
   font-variant: normal; 
@@ -125,9 +133,6 @@ display: block;
   color:white;
 }
 
-.block{
-  margin-left: 5%;
-}
 
 .content-desktop {display: block;}
 .content-mobile {display: none;}
@@ -200,9 +205,13 @@ display: block;
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+.title{
+  color:white;
 
-
-.link a {
-  color: #000;
-  font-size: 25px; 
 }
+
+a{
+  text-decoration: none;
+}
+
+

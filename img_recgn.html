@@ -7,38 +7,21 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./vanta.net.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <style>
+        body{
+            background: url("bg.png");
+            background-Attachment :fixed;
+            background-Size :cover;
+        }
+    </style>
 
 </head>
 <body>
-    <h1>Images recognizer:</h1>
-    <p>Using A neural network to recognize an image(for example a dog or a cat).Upload it and try</p>
-    <iframe class="block" src="https://neuros-y.herokuapp.com/" height="40%" width="90%" title="Img reco"></iframe>
+    <a id="logo" href="/index.html" style="margin-left:1%;text-decoration: none;">Neuros</a>
+    <h1 class="elt" style="margin-top: 7%;">Images recognizer:</h1>
+    <p class="elt">Using A neural network to recognize an image(for example a dog or a cat).Upload it and try</p>
+    <iframe class="frame" src="https://neuros-y.herokuapp.com/" style="margin-left:5%" height="70%" width="90%"
+        title="Img reco"></iframe>
 
-
-    <script>
-        if ($(window).width() >= 600) {
-            var y = 0;
-            function hover(e) {
-                document.getElementById("demo3").innerHTML = e.id;
-            }
-            VANTA.NET({
-                el: "html",
-                mouseControls: true,
-                touchControls: true,
-                scale: 1.00,
-                scaleMobile: 1,
-                color: 0x25bdde
-
-
-            })
-        } else {
-            document.body.style.backgroundImage = "url('bg.png')";
-            document.body.style.backgroundAttachment = "fixed";
-            document.body.style.backgroundSize = "cover";
-
-
-        }
-    </script>
 </body>
 </html>
