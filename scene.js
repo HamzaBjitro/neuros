@@ -38,7 +38,7 @@ var base = new THREE.Group();
 scene.add(base);
 const manager = new THREE.LoadingManager();
 manager.onLoad = init;
-const models = {
+/* const models = {
     knight: { url: './animals/KnightCharacter.gltf' },
     pug: { url: './animals/Pug.gltf' },
     cow: { url: './animals/Cow.gltf' },
@@ -66,7 +66,7 @@ function prepModelsAndAnimations() {
         model.animations = animsByName;
     });
 }
-
+ */
 const mixers = [];
 
 function init() {
