@@ -68,6 +68,13 @@ left: 36%;
 top:17%;
 position: absolute;
 }
+#a-me_Mario{
+color: #4bf309;
+font-size: 25px;
+left: 49%;
+top:47%;
+position: absolute;
+}
 
 
 .guess {
@@ -122,8 +129,7 @@ display: block;
 
 .animal{
   cursor:default;
-  opacity:0;
-
+  opacity:0; 
 }
 #logo{
   font-family: 'Quicksand', sans-serif;
